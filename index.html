@@ -1349,7 +1349,7 @@ var WHATSAPP_NUMBER = "";
   EVENTS.forEach(function (ev, i) {
     var lab = el("label", "choice");
     var inp = document.createElement("input");
-    inp.type = "checkbox"; inp.name = "events"; inp.value = ev.title; inp.checked = true;
+    inp.type = "checkbox"; inp.name = "events"; inp.value = ev.title; inp.checked = false;
     var sp = el("span", "", ev.title);
     sp.appendChild(el("small", "", dayLabel(ev.start) + " · " + (ev.timeLabel || timeOf(ev.start))));
     lab.appendChild(inp); lab.appendChild(sp);
